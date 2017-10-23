@@ -4,12 +4,17 @@ window.onload = function() {
 	setInterval(run, 1000/30);
 }
 
+var createButtons = function() {
+	
+}
+
 var posx = 0;
 var posy = 0;
 
 var run = function() {
 	ctx.fillStyle = "#FFF";
 	ctx.fillRect(0, 0, canv.width, canv.height);
+
 	ctx.fillStyle = "#000";
 	ctx.fillRect(posx, posy, 20, 20);
 }
