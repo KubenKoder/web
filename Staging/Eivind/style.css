@@ -1,0 +1,12 @@
+body {
+	margin: 0px;
+	background: #222;
+}
+canvas {
+	margin: 0px;
+}
+table, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	background: gray;
+ }
