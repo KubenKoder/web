@@ -7,6 +7,5 @@ canvas {
 }
 table, td {
 	border: 1px solid white;
-	border-collapse: collapse;
 	background: gray;
  }
