@@ -1,11 +1,13 @@
 body {
 	margin: 0px;
 	background: #222;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-canvas {
-	margin: 0px;
+
+h1 {
+	color: #aaa;
 }
-table, td {
-	border: 1px solid white;
-	background: gray;
- }
+
+#content {
+	margin: 10px;
+}
