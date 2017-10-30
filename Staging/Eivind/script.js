@@ -40,7 +40,6 @@ var createButtons = function(box) {
 		for (var j = 0; j < 6; j++) {
 			tds[j+6*i] = document.createElement("td");
 
-
 			buttons[j+6*i] = document.createElement("button");
 			
 			if (i == 0) {
@@ -109,15 +108,12 @@ var createButtons = function(box) {
 
 			tds[j+6*i].appendChild(buttons[j+6*i]);
 
-
 			trs[i].appendChild(tds[j+6*i]);
 		}
 
 		table.appendChild(trs[i]);
 	}
 }
-
-
 
 var posx = 0;
 var posy = 0;
