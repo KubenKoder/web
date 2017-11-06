@@ -1,0 +1,10 @@
+body {
+	margin: 0px;
+	background: #222;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #aaa;
+}
+
+#content {
+	margin: 10px;
+}
