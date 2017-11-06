@@ -32,6 +32,32 @@ body {
   color: white;
 }
 
-.container--text h1 {
+#codeLine_1, #codeLine_2 {
+  color: rgb(100, 200, 100);
+}
 
+#textInput {
+  resize: none;
+  width: 60%;
+  height: 30%;
+}
+
+#textResult {
+  resize: none;
+  width: 30%;
+  height: 30%;
+}
+
+iframe {
+  width: 30%;
+  height: 30%;
+}
+
+@keyframes fadeInCodeContainer {
+  0% {
+
+  }
+  100% {
+    filter: blur(0px);
+  }
 }
