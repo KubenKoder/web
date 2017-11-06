@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  /*
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  */
+  font-family: 'Oxygen', sans-serif;
+}
+
+.header {
+  background-color: #1F1F1F;
+  padding: 1% 7.5% 1% 7.5%;
+}
+
+.header h1 {
+  color: white;
+  font-size: 45px;
+  letter-spacing: 5px;
+  display: inline;
+}
+
+.header ul {
+  display: inline;
+}
+
+.header li {
+  display: inline;
+
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.dropbtn {
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  margin-top: 3px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #221F1F;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  border-bottom: 3px solid white;
+}
