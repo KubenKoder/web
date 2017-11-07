@@ -24,6 +24,20 @@ body {
   text-transform: uppercase;
 }
 
+.header ul {
+  display: inline;
+  float: right;
+}
+
+.header li {
+  display: inline;
+
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
 .container--text {
   background-color: #333333;
   margin: 1% 5% 1% 5%;
