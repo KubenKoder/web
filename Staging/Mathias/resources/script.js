@@ -2,7 +2,7 @@ function showCodeBox() {
   document.getElementById("c--text").style.animation = "fadeInCodeContainer 0.5s forwards";
 }
 
-setTimeout(showCodeBox, 6500);
+setTimeout(showCodeBox, 4500);
 
 
 
@@ -25,7 +25,7 @@ function writeCode() {
 
 var i = 0;
 var sentence = "<h1>Lær deg å kode din første linje nedenfor!</h1>";
-var speed = 75;
+var speed = 50;
 
 function codeLine_1() {
   if (i < sentence.length) {
@@ -46,4 +46,4 @@ function codeLine_2() {
   }
 }
 
-setTimeout(codeLine_2, 4200);
+setTimeout(codeLine_2, 2800);
