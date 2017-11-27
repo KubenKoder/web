@@ -19,47 +19,29 @@ window.onload = function() {
 	addEventListener("keydown", keydown);
 }
 
+var keyTyped = function() {
+	return false;
+}
+
 var keydown = function(evt) {
 	switch(evt.keyCode) {
 		//WASD
-		case 65:
+		case 37:
 			if (xv != 1 && chg == 0) {
 				xv = -1; yv = 0; chg = 1;
 			}
 		break;
-		case 87:
+		case 38:
 			if (yv != 1 && chg == 0) {
 				xv = 0; yv = -1; chg = 1;
 			}
 		break;
-		case 68:
+		case 39:
 			if (xv != -1 && chg == 0) {
 				xv = 1; yv = 0; chg = 1;
 			}
 		break;
-		case 83:
-			if (yv != -1 && chg == 0) {
-				xv = 0; yv = 1; chg = 1;
-			}
-		break;
-
-		//IJKL
-		case 74:
-		if (xv != 1 && chg == 0) {
-			xv = -1; yv = 0; chg = 1;
-		}
-		break;
-		case 73:
-			if (yv != 1 && chg == 0) {
-				xv = 0; yv = -1; chg = 1;
-			}
-		break;
-		case 76:
-			if (xv != -1 && chg == 0) {
-				xv = 1; yv = 0; chg = 1;
-			}
-		break;
-		case 75:
+		case 40:
 			if (yv != -1 && chg == 0) {
 				xv = 0; yv = 1; chg = 1;
 			}
