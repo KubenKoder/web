@@ -8,3 +8,12 @@ body {
 #content {
 	margin: 10px;
 }
+
+#draw-wrapper {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#draw-space {
+	width: 15px;
+}

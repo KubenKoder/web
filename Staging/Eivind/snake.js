@@ -12,7 +12,7 @@ length = 1;
 ax = Math.floor(Math.random()*tc);
 ay = Math.floor(Math.random()*tc);
 
-window.onload = function() {
+var snakeload = function() {
 	canv = document.getElementById("snake");
 	ctx = canv.getContext("2d");
 	setInterval(run, 1000/10);
@@ -26,23 +26,23 @@ var keyTyped = function() {
 var keydown = function(evt) {
 	switch(evt.keyCode) {
 		//WASD
-		case 37:
-			if (xv != 1 && chg == 0) {
+		case 65:
+			if ( (xv != 1 || length == 1 ) && chg == 0) {
 				xv = -1; yv = 0; chg = 1;
 			}
 		break;
-		case 38:
-			if (yv != 1 && chg == 0) {
+		case 87:
+			if ( (yv != 1 || length == 1 ) && chg == 0) {
 				xv = 0; yv = -1; chg = 1;
 			}
 		break;
-		case 39:
-			if (xv != -1 && chg == 0) {
+		case 68:
+			if ( ( xv != -1 || length == 1 ) && chg == 0) {
 				xv = 1; yv = 0; chg = 1;
 			}
 		break;
-		case 40:
-			if (yv != -1 && chg == 0) {
+		case 83:
+			if ( (yv != -1 || length == 1 ) && chg == 0) {
 				xv = 0; yv = 1; chg = 1;
 			}
 	}
@@ -95,20 +95,19 @@ var run = function() {
 	draw();
 }
 
-var color = function(num, length) {
+var colorfunc = function(num, length) {
 	num = 128 + num * 128 / (length)
 	return Math.floor(num);
 }
 
 var draw = function() {
 	//bg
-	ctx.fillStyle = "#000000";
+	ctx.fillStyle = "#111";
 	ctx.fillRect(0,0,canv.width,canv.height);
 
 	//player
 	for (var i = 0; i < length; i++) {
-		console.log(color(i + 1, tail.length));
-		ctx.fillStyle = "rgb(0, " + color(i + 1, tail.length) + ", 0)";
+		ctx.fillStyle = "rgb(0, " + colorfunc(i + 1, tail.length) + ", 0)";
 		ctx.fillRect(tail[i].x*gs, tail[i].y*gs, gs, gs);
 	}
 

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-	<title>Kuben Koder Klubb</title>
+	<title>Kuben Kodeklubb</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
+	<script src="canvas1.js"></script>
 	<script src="snake.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<img
@@ -15,12 +16,70 @@
 	width="100%"
 	>
 	<div id="content">
+
+		<h1>Kuben Kodeklubb</h1> <br>
+
 		<h1>Ting man kan gjøre med kode:</h1>
 
-		<p> Man kan for eksempel lage et spill: <br>
-		(Bruk piltastene til å styre. Hvis det ikke virker, prøv å klikke på spillet.) </p>
+		<h2>HTML5 canvas er et nyttig verktøy som kan brukes til å lage alt fra små gimmicker til avanserte spill.</h2>
+
+		<h3>Dette er et kjapt eksempel på egenskapene til canvas.</h3>
+		<p>Her er noe som kan minne om et tegneprogram:</p>
+		<div id="draw-wrapper">
+			<div>
+				<canvas id="canvas1" width="400" height="400"></canvas>
+			</div>
+			<div id="draw-space"></div>
+			<div>
+				<p>Sett inn en boks! (området er 400x400)</p>
+				<label for="x">x:</label>
+				<input type="number" id="x" value="25">
+				<input type="range" min="0" max="400" value="25" id="xs"> <br>
+
+				<label for="y">y:</label>
+				<input type="number" id="y" value="25">
+				<input type="range" min="0" max="400" value="25" id="ys"> <br>
+
+				<label for="w">bredde:</label>
+				<input type="number" id="w" value="25">
+				<input type="range" min="0" max="400" value="25" id="ws"> <br>
+
+				<label for="h">høyde:</label>
+				<input type="number" id="h" value="25">
+				<input type="range" min="0" max="400" value="25" id="hs"> <br>
+
+				<p>Farge:</p>
+
+				<label for="r">rød:</label>
+				<input type="number" id="r" value="100">
+				<input type="range" min="0" max="255" value="100" id="rs"> <br>
+
+				<label for="g">grønn:</label>
+				<input type="number" id="g" value="100">
+				<input type="range" min="0" max="255" value="100" id="gs"> <br>
+
+				<label for="b">blå:</label>
+				<input type="number" id="b" value="100">
+				<input type="range" min="0" max="255" value="100" id="bs"> <br>
+
+				<button onclick="buttonCall()">Tegn!</button>
+				<button onclick="clearField()">Nullstill!</button>
+
+				<button onclick="{clearField(); buttonCall()}">
+					Nullstill og tegn!
+				</button>
+
+				<button onclick="clearVars()">
+					Nullstill posisjon og farger!
+				</button>
+			</div>
+		</div>
+
+		<h3>Her er et eksempel på et spill: </h3>
+		<p>(Bruk WASD til å styre. Hvis det ikke virker, prøv å klikke på spillet.) </p>
 		<canvas id="snake" width="400" height="400"></canvas>
-		<p>Det går fort også; dette spillet ble laget på bare to friminutter. (2x45 min)</p>
+		<p>Det går fort å lage også; dette spillet ble laget på bare to friminutter. (2x45 min)</p>
+
 	</div>
 </body>
 </html>
