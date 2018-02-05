@@ -19,10 +19,6 @@ var snakeload = function() {
 	addEventListener("keydown", keydown);
 }
 
-var keyTyped = function() {
-	return false;
-}
-
 var keydown = function(evt) {
 	switch(evt.keyCode) {
 		//WASD
