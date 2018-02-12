@@ -88,7 +88,7 @@ var run = function() {
 		tail.shift();
 	}
 
-	draw();
+	snkdraw();
 }
 
 var colorfunc = function(num, length) {
@@ -96,7 +96,7 @@ var colorfunc = function(num, length) {
 	return Math.floor(num);
 }
 
-var draw = function() {
+var snkdraw = function() {
 	//bg
 	ctx.fillStyle = "#111";
 	ctx.fillRect(0,0,canv.width,canv.height);

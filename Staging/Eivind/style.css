@@ -22,3 +22,13 @@ body {
 	width: 80px;
 	display: inline-block;
 }
+
+#fog-wrapper {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#fog-button {
+	border-radius: 5px;
+	margin: 30px 10px;
+}

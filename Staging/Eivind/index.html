@@ -4,7 +4,9 @@
 	<title>Kuben Kodeklubb</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="p5.js"></script>
 	<script src="canvas1.js"></script>
+	<script src="fog.js"></script>
 	<script src="snake.js"></script>
 	<script src="script.js"></script>
 </head>
@@ -23,8 +25,8 @@
 
 		<h2>HTML5 canvas er et nyttig verktøy som kan brukes til å lage alt fra små gimmicker til avanserte spill.</h2>
 
-		<h3>Dette er et kjapt eksempel på egenskapene til canvas.</h3>
-		<p>Her er noe som kan minne om et tegneprogram:</p>
+		<h3>Under er et raskt eksempel på egenskapene til canvas.</h3>
+		<h4>Her er noe som kan minne om et tegneprogram:</h4>
 		<div id="draw-wrapper">
 			<div>
 				<canvas id="canvas1" width="400" height="400"></canvas>
@@ -78,11 +80,22 @@
 			</div>
 		</div>
 
-		<h3>Her er et eksempel på et spill: </h3>
+		<br>
+
+		<h4>Her er et eksempel på et spill: </h4>
 		<p>(Bruk WASD til å styre. Hvis det ikke virker, prøv å klikke på spillet.) </p>
 		<canvas id="snake" width="400" height="400"></canvas>
 		<p>Det går fort å lage også; dette spillet ble laget på bare to friminutter. (2x45 min)</p>
 
+		<br>
+		<h4>Her er en kul tåke-effekt som er ganske lett å lage:</h4>
+
+		<div id="fog-wrapper">
+			<div id="fogeffect"></div>
+			<button id="fog-button" onclick="fogchange()">Start/stopp!</button>
+		</div>
+		<p>Dette er gjort med bare 25 linjer kode!</p>
+	
 	</div>
 </body>
 </html>
