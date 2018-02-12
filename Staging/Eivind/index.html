@@ -32,35 +32,37 @@
 			<div id="draw-space"></div>
 			<div>
 				<p>Sett inn en boks! (området er 400x400)</p>
-				<label for="x">x:</label>
+				<label for="x" id="label">x:</label>
 				<input type="number" id="x" value="25">
 				<input type="range" min="0" max="400" value="25" id="xs"> <br>
 
-				<label for="y">y:</label>
+				<label for="y" id="label">y:</label>
 				<input type="number" id="y" value="25">
 				<input type="range" min="0" max="400" value="25" id="ys"> <br>
 
-				<label for="w">bredde:</label>
+				<label for="w" id="label">bredde:</label>
 				<input type="number" id="w" value="25">
 				<input type="range" min="0" max="400" value="25" id="ws"> <br>
 
-				<label for="h">høyde:</label>
+				<label for="h" id="label">høyde:</label>
 				<input type="number" id="h" value="25">
 				<input type="range" min="0" max="400" value="25" id="hs"> <br>
 
 				<p>Farge:</p>
 
-				<label for="r">rød:</label>
+				<label for="r" id="label">rød:</label>
 				<input type="number" id="r" value="100">
 				<input type="range" min="0" max="255" value="100" id="rs"> <br>
 
-				<label for="g">grønn:</label>
+				<label for="g" id="label">grønn:</label>
 				<input type="number" id="g" value="100">
 				<input type="range" min="0" max="255" value="100" id="gs"> <br>
 
-				<label for="b">blå:</label>
+				<label for="b" id="label">blå:</label>
 				<input type="number" id="b" value="100">
 				<input type="range" min="0" max="255" value="100" id="bs"> <br>
+
+				<br>
 
 				<button onclick="buttonCall()">Tegn!</button>
 				<button onclick="clearField()">Nullstill!</button>
@@ -70,8 +72,9 @@
 				</button>
 
 				<button onclick="clearVars()">
-					Nullstill posisjon og farger!
+					Nullstill verdier!
 				</button>
+
 			</div>
 		</div>
 

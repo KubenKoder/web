@@ -17,3 +17,8 @@ body {
 #draw-space {
 	width: 15px;
 }
+
+#label {
+	width: 80px;
+	display: inline-block;
+}
