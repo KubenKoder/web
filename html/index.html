@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Kuben Kodeklubb</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="p5.js"></script>
+	<script src="canvas1.js"></script>
+	<script src="fog.js"></script>
+	<script src="snake.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<img
+	src="Media/kuben_forsidebilde.jpg"
+	alt="Forsidebilde til kuben"
+	title="Kuben Koder Klubb"
+	width="100%"
+	>
+	<div id="content">
 
+		<h1>Kuben Kodeklubb</h1> <br>
+
+		<div id="koding">
+
+			<h1>Ting man kan gjøre med kode:</h1>
+
+			<h2>HTML5 canvas er et nyttig verktøy som kan brukes til å lage alt fra små gimmicker til avanserte spill.</h2>
+
+			<h3>Under er et raskt eksempel på egenskapene til canvas.</h3>
+			<h4>Her er noe som kan minne om et tegneprogram:</h4>
+			<div id="draw-wrapper">
+				<div>
+					<canvas id="canvas1" width="400" height="400"></canvas>
+				</div>
+				<div id="draw-space"></div>
+				<div>
+					<p>Sett inn en boks! (området er 400x400)</p>
+					<label for="x" id="label">x:</label>
+					<input type="number" id="x" value="25">
+					<input type="range" min="0" max="400" value="25" id="xs"> <br>
+
+					<label for="y" id="label">y:</label>
+					<input type="number" id="y" value="25">
+					<input type="range" min="0" max="400" value="25" id="ys"> <br>
+
+					<label for="w" id="label">bredde:</label>
+					<input type="number" id="w" value="25">
+					<input type="range" min="0" max="400" value="25" id="ws"> <br>
+
+					<label for="h" id="label">høyde:</label>
+					<input type="number" id="h" value="25">
+					<input type="range" min="0" max="400" value="25" id="hs"> <br>
+
+					<p>Farge:</p>
+
+					<label for="r" id="label">rød:</label>
+					<input type="number" id="r" value="100">
+					<input type="range" min="0" max="255" value="100" id="rs"> <br>
+
+					<label for="g" id="label">grønn:</label>
+					<input type="number" id="g" value="100">
+					<input type="range" min="0" max="255" value="100" id="gs"> <br>
+
+					<label for="b" id="label">blå:</label>
+					<input type="number" id="b" value="100">
+					<input type="range" min="0" max="255" value="100" id="bs"> <br>
+
+					<br>
+
+					<button onclick="buttonCall()">Tegn!</button>
+					<button onclick="clearField()">Nullstill!</button>
+
+					<button onclick="{clearField(); buttonCall()}">
+						Nullstill og tegn!
+					</button>
+
+					<button onclick="clearVars()">
+						Nullstill verdier!
+					</button>
+
+				</div>
+			</div>
+
+			<br>
+
+			<h4>Her er et eksempel på et spill: </h4>
+			<p>(Bruk WASD til å styre. Hvis det ikke virker, prøv å klikke på spillet.) </p>
+			<canvas id="snake" width="400" height="400"></canvas>
+			<p>Det går fort å lage også; dette spillet ble laget på bare to friminutter. (2x45 min)</p>
+
+			<br>
+			<h4>Her er en kul tåke-effekt som er ganske lett å lage:</h4>
+
+			<div id="fog-wrapper">
+				<div id="fogeffect"></div>
+				<button id="fog-button" onclick="fogchange()">Start/stopp!</button>
+			</div>
+			<p>Dette er gjort med bare 25 linjer kode!</p>
+
+		</div>
+	
+	</div>
+</body>
+</html>
